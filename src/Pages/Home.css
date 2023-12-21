@@ -1,0 +1,159 @@
+.main_body{
+    /* background: linear-gradient(#FFF8C9,#BEADFA,#D0BFFF,#DFCCFB); */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.text{
+    color :yellow;
+    font-size: 20rem;
+    font-weight: 700;
+}
+.title{
+    display: none;
+}
+.card{
+    background-color: black;
+    border: 2px solid yellow;
+    box-shadow: 2px 2px 5px yellow;
+    height: 70%;
+    width: 30%;
+    padding: 2%;
+    border-radius: 20px;
+    border: 5px solid yellow;
+
+
+}
+.top_sec{
+    width: 100%;
+    display: flex;
+}
+.input_field{
+    width: 78%;
+    height: 2.5rem;
+    padding-left: 2%;
+    border-radius: 15px;
+    border: 3px solid yellow;
+    background-color: yellow;
+    color: black;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px yellow;
+
+}
+.add_btn{
+    width:18%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: yellow;
+    border-radius: 15px;
+    background-color: black;
+    border: 3px solid yellow;
+    box-shadow: 2px 2px 5px yellow;
+}
+.add_btn:hover{
+    color: black;
+    background-color: yellow;
+    border: 3px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+.item_sec{
+    max-height:87% ;
+    width: 100%;
+    margin-top: 5%;
+    overflow-y: scroll;
+   
+}
+.item_sec::-webkit-scrollbar {
+    width: 20px; 
+   
+}
+.item_sec::-webkit-scrollbar-track {
+    background-color: yellow;
+    border-radius: 70px;
+
+}
+.item_sec::-webkit-scrollbar-thumb {
+    background-color: rgb(0, 0, 0); 
+    border-radius: 70px;
+}
+.item{
+    background-color: yellow;
+    height: 2.5rem;
+    width: 94%;
+    margin: 2% auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px yellow;
+    display: flex;
+    align-items: center;
+   
+}
+ul{
+    margin: 2% 0;
+    list-style-type: none;
+    padding: 0;
+}
+.task_name{
+    color: black;
+    font-weight: 600;
+    width: 60%;
+    margin-right: auto;
+    padding-left: 4% ;
+    overflow-x: hidden;
+    
+}
+.task_edit{
+    width: 15%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+.task_edit:hover{
+    color: blue;
+    text-shadow: 0px 0px  5px blue;
+}
+.task_del{
+    width: 15%;
+    font-weight: 600;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.task_del:hover {
+    color: red;
+    text-shadow: 0px 0px  5px red;
+}
+@media screen  and (max-width:480px) {
+    .main_body{
+        /* background: linear-gradient(#FFF8C9,#BEADFA,#D0BFFF,#DFCCFB); */
+        background-color: black;
+        display: flex;
+       flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    .card{
+       
+        height: 70%;
+        width: 80%;
+        padding: 2%;
+    }
+    .item_sec{
+        max-height:85% ;
+        width: 100%;
+        margin-top: 5%;
+        overflow-y: scroll;
+    }
+    
+    .text{
+        display: none;
+    }
+    .title{
+        display: contents;
+        color: yellow;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+}
