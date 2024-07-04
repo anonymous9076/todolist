@@ -1,159 +1,175 @@
-.main_body{
-    /* background: linear-gradient(#FFF8C9,#BEADFA,#D0BFFF,#DFCCFB); */
-    background-color: black;
+.slide1 {
+    height: 100dvh;
+    width: 100%;
+    background: url('https://forto.com/wp-content/uploads/2018/09/rsz_trends2018.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
 }
-.text{
-    color :yellow;
-    font-size: 20rem;
-    font-weight: 700;
-}
-.title{
-    display: none;
-}
-.card{
-    background-color: black;
-    border: 2px solid yellow;
-    box-shadow: 2px 2px 5px yellow;
-    height: 70%;
-    width: 30%;
-    padding: 2%;
-    border-radius: 20px;
-    border: 5px solid yellow;
 
-
-}
-.top_sec{
-    width: 100%;
-    display: flex;
-}
-.input_field{
-    width: 78%;
-    height: 2.5rem;
-    padding-left: 2%;
-    border-radius: 15px;
-    border: 3px solid yellow;
-    background-color: yellow;
-    color: black;
-    font-weight: 600;
-    box-shadow: 2px 2px 5px yellow;
-
-}
-.add_btn{
-    width:18%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: yellow;
-    border-radius: 15px;
-    background-color: black;
-    border: 3px solid yellow;
-    box-shadow: 2px 2px 5px yellow;
-}
-.add_btn:hover{
-    color: black;
-    background-color: yellow;
-    border: 3px solid black;
-    box-shadow: 2px 2px 5px black;
-}
-.item_sec{
-    max-height:87% ;
-    width: 100%;
-    margin-top: 5%;
-    overflow-y: scroll;
-   
-}
-.item_sec::-webkit-scrollbar {
-    width: 20px; 
-   
-}
-.item_sec::-webkit-scrollbar-track {
-    background-color: yellow;
-    border-radius: 70px;
-
-}
-.item_sec::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0); 
-    border-radius: 70px;
-}
-.item{
-    background-color: yellow;
-    height: 2.5rem;
-    width: 94%;
-    margin: 2% auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 2px yellow;
-    display: flex;
-    align-items: center;
-   
-}
-ul{
-    margin: 2% 0;
-    list-style-type: none;
+.slide1>h1 {
+    margin: 2%;
     padding: 0;
+    color: #070F2B;
+    font-size: clamp(3rem, 5vw, 5rem);
 }
-.task_name{
-    color: black;
-    font-weight: 600;
-    width: 60%;
-    margin-right: auto;
-    padding-left: 4% ;
-    overflow-x: hidden;
-    
-}
-.task_edit{
-    width: 15%;
-    font-weight: 600;
+
+.slide1>p {
+    width: 50%;
+    color: #070F2B;
     font-size: 1.5rem;
-    cursor: pointer;
+    backdrop-filter: blur(2px);
+    background-color: #ffffff75;
+    padding: 2%;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.title2 {
+    width: 100%;
+    height: 6rem;
+    display: grid;
+    place-content:end center;
+    text-align: center;
+    color: #070F2B;
+    font-size: clamp(1.5rem,4vw,3.5rem);
+}
+
+.row {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 70dvh;
+    padding: 0 4%;
+    box-sizing: border-box;
+}
+
+.row>img {
+    width: 50%;
+    padding: 2%;
+    box-sizing: border-box;
+    border-radius: 10%;
+    border-top: 2px solid #070F2B;
+    border-bottom: 2px solid #070F2B;
+}
+
+.textDiv {
+    width: 50%;
+    padding: 0 4%;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+.textDiv>h1 {
+    color: #070F2B;
+    font-size: clamp(2rem, 3.5vw, 3.5rem);
+    margin-top: 0;
+    padding-top: 0;
+    border-bottom: 2px solid #070F2B;
+}
+
+.row:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+.slide3{
+    height: 120dvh;
+    width: 100%;
+}
+.slide3-bg{
+    height: 98%;
+    width: 96%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: url('https://www.cma-cgm.com/assets/public/top-banner/banner_logistics_solutions.png?VersionId=J_YKjNliBVa91FeBbaktMsNzMnKuRGVt');
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+.slide3-bg>h1{
+    height: 20%;
+    display: grid;
+    place-content: center;
 
 }
-.task_edit:hover{
-    color: blue;
-    text-shadow: 0px 0px  5px blue;
+.card-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    overflow: hidden;
 }
-.task_del{
-    width: 15%;
-    font-weight: 600;
-    font-size: 1.5rem;
-    cursor: pointer;
+
+.slide4{
+    height: 60dvh;
+    width: 100%;
 }
-.task_del:hover {
-    color: red;
-    text-shadow: 0px 0px  5px red;
+.slide4>ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+
 }
-@media screen  and (max-width:480px) {
-    .main_body{
-        /* background: linear-gradient(#FFF8C9,#BEADFA,#D0BFFF,#DFCCFB); */
-        background-color: black;
-        display: flex;
-       flex-direction: column;
-        height: 100vh;
-        width: 100%;
-    }
-    .card{
-       
-        height: 70%;
+.slide4>ul>li{
+    height: 10rem;
+    text-align: center;
+    width: 10rem;
+    border-bottom: 3px solid #070F2B;
+    border-radius: 10px;
+}
+.slide4>ul>li>h1{
+    font-size: 4rem;
+    color: #070F2B;
+}
+
+@media screen and (max-width:800px) {
+    .slide1>p {
         width: 80%;
-        padding: 2%;
+       
     }
-    .item_sec{
-        max-height:85% ;
+    .title2 {
+        place-content: center;
+       
+    }
+    .row {
+        flex-direction: column;
         width: 100%;
-        margin-top: 5%;
-        overflow-y: scroll;
+        height: fit-content;
+        
     }
+    .row:nth-child(2n) {
+        flex-direction: column;
+    }
+    .row>img {
+        width: 90%;
+    }
+    .textDiv>h1 {
+        border-bottom:none;
+    }
+    .textDiv {
+        width: 90%;
+    }
+    .slide4{
+        height: fit-content;
+    }
+    .slide4>ul{
+        height: 100%;
+        flex-direction: column;
     
-    .text{
-        display: none;
     }
-    .title{
-        display: contents;
-        color: yellow;
-        font-size: 3rem;
-        font-weight: 600;
+    .slide4>ul>li{
+        height: 10rem;
+        text-align: center;
+        width: 10rem;
+        border-bottom: 3px solid #070F2B;
+        border-radius: 10px;
+        margin: 4% 0;
     }
 }

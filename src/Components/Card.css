@@ -1,0 +1,11 @@
+.card{
+    color: #070F2B;
+    border-radius: 4rem 0 4rem 0;
+    width: 20rem;
+    height: 25rem;
+}
+.card>img{
+    border-radius:0 0 4rem 0;
+    padding: 1.5%;
+    box-sizing: border-box;
+}
